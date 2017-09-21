@@ -13,6 +13,9 @@
 		321DA4B41F7138CD008C9205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 321DA4B31F7138CD008C9205 /* Assets.xcassets */; };
 		321DA4B71F7138CD008C9205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321DA4B51F7138CD008C9205 /* LaunchScreen.storyboard */; };
 		321DA4C21F7138CD008C9205 /* michelle_viper_demo01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321DA4C11F7138CD008C9205 /* michelle_viper_demo01Tests.swift */; };
+		321DA4CD1F713C42008C9205 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321DA4CC1F713C42008C9205 /* Entity.swift */; };
+		321DA4CF1F7215D1008C9205 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321DA4CE1F7215D1008C9205 /* config.swift */; };
+		4315D4A67AE6890AF8EA2DDF /* Pods_michelle_viper_demo01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7B9A67414ED4B15E9DAFF0 /* Pods_michelle_viper_demo01.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,11 @@
 		321DA4BD1F7138CD008C9205 /* michelle_viper_demo01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = michelle_viper_demo01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		321DA4C11F7138CD008C9205 /* michelle_viper_demo01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = michelle_viper_demo01Tests.swift; sourceTree = "<group>"; };
 		321DA4C31F7138CD008C9205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		321DA4CC1F713C42008C9205 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		321DA4CE1F7215D1008C9205 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		5B602BD7FF8492FD8E7E1D5F /* Pods-michelle_viper_demo01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-michelle_viper_demo01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-michelle_viper_demo01/Pods-michelle_viper_demo01.debug.xcconfig"; sourceTree = "<group>"; };
+		5F258F6EE3CB200128F4FDE7 /* Pods-michelle_viper_demo01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-michelle_viper_demo01.release.xcconfig"; path = "Pods/Target Support Files/Pods-michelle_viper_demo01/Pods-michelle_viper_demo01.release.xcconfig"; sourceTree = "<group>"; };
+		9D7B9A67414ED4B15E9DAFF0 /* Pods_michelle_viper_demo01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_michelle_viper_demo01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4315D4A67AE6890AF8EA2DDF /* Pods_michelle_viper_demo01.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		152A1EC18A73504D736205EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D7B9A67414ED4B15E9DAFF0 /* Pods_michelle_viper_demo01.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		321DA4A01F7138CD008C9205 = {
 			isa = PBXGroup;
 			children = (
 				321DA4AB1F7138CD008C9205 /* michelle_viper_demo01 */,
 				321DA4C01F7138CD008C9205 /* michelle_viper_demo01Tests */,
 				321DA4AA1F7138CD008C9205 /* Products */,
+				E5A68D52F3BC950CA96FDDBB /* Pods */,
+				152A1EC18A73504D736205EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +102,8 @@
 				321DA4B31F7138CD008C9205 /* Assets.xcassets */,
 				321DA4B51F7138CD008C9205 /* LaunchScreen.storyboard */,
 				321DA4B81F7138CD008C9205 /* Info.plist */,
+				321DA4CC1F713C42008C9205 /* Entity.swift */,
+				321DA4CE1F7215D1008C9205 /* config.swift */,
 			);
 			path = michelle_viper_demo01;
 			sourceTree = "<group>";
@@ -96,6 +117,15 @@
 			path = michelle_viper_demo01Tests;
 			sourceTree = "<group>";
 		};
+		E5A68D52F3BC950CA96FDDBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B602BD7FF8492FD8E7E1D5F /* Pods-michelle_viper_demo01.debug.xcconfig */,
+				5F258F6EE3CB200128F4FDE7 /* Pods-michelle_viper_demo01.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 321DA4C61F7138CD008C9205 /* Build configuration list for PBXNativeTarget "michelle_viper_demo01" */;
 			buildPhases = (
+				D94324F87E013FB4147FEA09 /* [CP] Check Pods Manifest.lock */,
 				321DA4A51F7138CD008C9205 /* Sources */,
 				321DA4A61F7138CD008C9205 /* Frameworks */,
 				321DA4A71F7138CD008C9205 /* Resources */,
+				26347AF97600E9EFEAF828A6 /* [CP] Embed Pods Frameworks */,
+				8732A5E8F82E0ECF5724A78C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,13 +227,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26347AF97600E9EFEAF828A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-michelle_viper_demo01/Pods-michelle_viper_demo01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8732A5E8F82E0ECF5724A78C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-michelle_viper_demo01/Pods-michelle_viper_demo01-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D94324F87E013FB4147FEA09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		321DA4A51F7138CD008C9205 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				321DA4AF1F7138CD008C9205 /* ViewController.swift in Sources */,
+				321DA4CF1F7215D1008C9205 /* config.swift in Sources */,
 				321DA4AD1F7138CD008C9205 /* AppDelegate.swift in Sources */,
+				321DA4CD1F713C42008C9205 /* Entity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +422,7 @@
 		};
 		321DA4C71F7138CD008C9205 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B602BD7FF8492FD8E7E1D5F /* Pods-michelle_viper_demo01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = michelle_viper_demo01/Info.plist;
@@ -351,6 +435,7 @@
 		};
 		321DA4C81F7138CD008C9205 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F258F6EE3CB200128F4FDE7 /* Pods-michelle_viper_demo01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = michelle_viper_demo01/Info.plist;
@@ -408,6 +493,7 @@
 				321DA4C81F7138CD008C9205 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		321DA4C91F7138CD008C9205 /* Build configuration list for PBXNativeTarget "michelle_viper_demo01Tests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +502,7 @@
 				321DA4CB1F7138CD008C9205 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
